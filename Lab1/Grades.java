@@ -14,6 +14,8 @@ public class Grades {
         float counterPass = 0;
         float counterFail = 0;
 
+        String decision = "";
+
         Scanner scan = new Scanner(System.in);
         
         System.out.println("How many grades will you check?: ");
@@ -25,14 +27,15 @@ public class Grades {
             System.out.println("Input Grade: ");
             float grade = scan.nextFloat();
             
-                sumOfGrades += grade;
+            sumOfGrades += grade;
 
-                if (grade >= 60) {
-                    counterPass++;
-                }
-                else {
-                    counterFail++;
-                }
+            if (grade >= 60) {
+                counterPass++;
+            }
+            else {
+                counterFail++;
+            }
+                
         }
 
         //Calculate Average
